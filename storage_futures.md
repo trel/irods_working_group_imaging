@@ -21,7 +21,7 @@
 | 4 | yes | no  | no  | 1 | classic, internal only | YES, but fills up local storage|
 | 5 | yes | no  | yes | 1 | classic + 'save as' button | YES, marginally more than classic |
 | 6 | yes | yes | no  | 1 | classic + external refs | YES - here TODAY |
-| 7 | yes | yes | yes | 2 | ALL THE THINGS | YES, can be held well to not fill up local storage |
+| 7 | yes | yes | yes | 2 | ALL THE THINGS | YES, can be used/configured to NOT fill up local storage |
 
 ## analysis
 
@@ -31,4 +31,4 @@ A phased upgrade/rollout/development plan may be...
 
 - [6] -> [7] -> [3]
 
-Once OMERO can write to an external iRODS storage location... iRODS could also 'register' that file or a descendent of that file back into OMERO for future reading.  This full circle would make OMERO appear to be managing the storage, but it would not be.
+Once OMERO can write to an external iRODS storage location... iRODS could also 'register' that file or a descendent of that file as a reference back into OMERO for future reading.  This full external write/register/read circle would make OMERO appear to be managing the storage, but it would not be.
