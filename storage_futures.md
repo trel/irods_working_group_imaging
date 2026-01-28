@@ -17,11 +17,11 @@
 | 0 | no  | no  | no  | 0 | doesn't make sense | no |
 | 1 | no  | no  | yes | 1 | export-only | for migration? |
 | 2 | no  | yes | no  | 1 | read-only | a safe playground/viewer? |
-| 3 | no  | yes | yes | 1 | omero is app-only | YES, the future |
-| 4 | yes | no  | no  | 1 | today, internal only | YES, but fills up local storage|
-| 5 | yes | no  | yes | 1 | today + save as button | YES, transition |
-| 6 | yes | yes | no  | 1 | today + reading external | YES, transition |
-| 7 | yes | yes | yes | 2 | ALL THE THINGS | YES, transition |
+| 3 | no  | yes | yes | 1 | omero is app-only | YES, the future/goal |
+| 4 | yes | no  | no  | 1 | classic, internal only | YES, but fills up local storage|
+| 5 | yes | no  | yes | 1 | classic + 'save as' button | YES, marginally more than classic |
+| 6 | yes | yes | no  | 1 | classic + external refs | YES - here TODAY |
+| 7 | yes | yes | yes | 2 | ALL THE THINGS | YES, can be held well to not fill up local storage |
 
 ## analysis
 
@@ -29,7 +29,6 @@ Cases 0, 1, and 2 don't seem as immediately practical, perhaps later...
 
 A phased upgrade/rollout/development plan may be...
 
-- [4] -> [5 or 6] -> [7] -> [3]
+- [6] -> [7] -> [3]
 
-If/when OMERO can write to an external iRODS storage location... iRODS could also 'register' that file or a descendent of that file back into OMERO for future reading.  This full circle would make OMERO appear to be managing the storage, but it would not be.
-
+Once OMERO can write to an external iRODS storage location... iRODS could also 'register' that file or a descendent of that file back into OMERO for future reading.  This full circle would make OMERO appear to be managing the storage, but it would not be.
